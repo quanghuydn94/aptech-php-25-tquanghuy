@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 10px;
+}
+.header{
+    background-color: gray;
+    text-align: center;
+    padding: 30px;
+}
+.content{
+    display: flex;
+}
+.city{
+    flex: 1;
+    background-color: honeydew;
+}
+.city li{
+    list-style-type: none;
+    padding: 0px 10px;
+}
+.content-city{
+    flex: 3;
+    background-color: khaki;
+    padding-left: 10px;
+}
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: lavender;
+}
+@media only screen and (max-width: 500px){
+    .content{
+        flex-direction: column;
+    }
+  
+}
