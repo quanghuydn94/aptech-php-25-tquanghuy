@@ -1,0 +1,31 @@
+.handle{
+    position: relative;
+    left: 2%;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+
+
+}
+.blade{
+    position: relative;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 120%;
+    border-bottom-width: 250px;
+}
+.circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 60%;
+
+}
+.hole{
+    position: relative;
+    right: 39%;
+    margin-top: 3%;
+    width: 20%;
+    justify-content: space-around;
+    transform: skewY(-5deg);
+}

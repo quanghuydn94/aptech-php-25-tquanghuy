@@ -1,0 +1,16 @@
+.padding-l-r{
+    padding: 0rem 9rem;
+}
+.hover:hover{
+    border-bottom:4px solid #6C757D;
+}
+.border-color{
+    border-bottom: 4px solid white;
+}
+.border-bt{
+    font-size: 1.1rem;
+    border-bottom: 4px solid #343A40;
+}
+.dislay-4{
+    font-size: 1rem;
+}
