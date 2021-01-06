@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+.Form{
+    &-width{
+        width: 30%;
+    }
+    &__Logo-B{
+        &--width{
+            width: 90px;
+        
+        }
+        &--bgcolor--font-size{
+            background-color: #5A3F84;
+            font-size: 50px;
+        }
+        &--bd-radius{
+            border-radius: 10px;
+        }
+    }
+    &__Input1{
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        margin-bottom: -1px;
+        
+    }
+    &__Input2{
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        margin-bottom:10px;
+    }
+    &__btn{
+        width: 100%;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,39 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Form-width {
+  width: 30%;
+}
+
+.Form__Logo-B--width {
+  width: 90px;
+}
+
+.Form__Logo-B--bgcolor--font-size {
+  background-color: #5A3F84;
+  font-size: 50px;
+}
+
+.Form__Logo-B--bd-radius {
+  border-radius: 10px;
+}
+
+.Form__Input1 {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-bottom: -1px;
+}
+
+.Form__Input2 {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  margin-bottom: 10px;
+}
+
+.Form__btn {
+  width: 100%;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */
