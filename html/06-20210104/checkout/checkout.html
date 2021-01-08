@@ -2,15 +2,16 @@
 <html>
     <head>
         <title>Checkout</title>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <link rel="stylesheet" href="../bootstrap.css">
         <link rel="stylesheet" href="./style.css">
         <script src="https://kit.fontawesome.com/47b471de20.js" crossorigin="anonymous"></script>
 
     </head>
     <body class="bg-light">
-        <div class="container text-center mt-5">
+        <div class="container   mt-5">
             <div class="Introduce px-5">
-                <img src="./bootstrap.svg" class="Image-size mb-5" alt="#"> 
+                <img src="./bootstrap.svg" class="Image-size mb-5" > 
                 <h2>Checkout form</h2>
                 <p class="lead">
                     Below is an example form built entirely with Bootstrap’s form controls.
@@ -19,8 +20,48 @@
                 </p>
                 
             </div>
-            <div class="row px-4 mr-2">
-                <div class="col-7 text-left">
+            <div class="row px-4 ">
+                <div class="  order-md-2  mb-4 col-md-4 ">
+                    <h4 class="text-secondary">Your cart</h4>
+                    <ul class="list-group text-left">
+                        <li class="list-group-item d-flex justify-content-between">
+                           <div>
+                               <h6 class="my-0">Product name</h6>
+                               <label class="text-muted Label-font-size">Brief description</label>
+                           </div>
+                           <span class="text-muted">$12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <h6 class="my-0">Second product</h6>
+                                <label class="Label-font-size text-muted">Brief description</label>
+                            </div>
+                            <span class="text-muted">$8</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <h6 class="my-0">Third item</h6>
+                                <label for="" class="Label-font-size text-muted">Brief description</label>
+                            </div>
+                            <span class="text-muted">$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between text-success bg-light">
+                            <div >
+                                <h6 class="my-0">Promo code</h6>
+                                <label for="" class="Label-font-size">EXAMPLECODE</label>
+                            </div>
+                            <span >-$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <h6 class="my-0"></h6>
+                                <label for="" class="Label-font-size">Total (USD)</label>
+                            </div>
+                            <span class="text-dark font-weight-bold">$20</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" order-md-1 text-left col-md-8  ">
                     <h4>Billing address</h4>
                     <div class="First-name d-flex justify-content-between mb-3">
                         <div class="First-name w-50 mr-4">
@@ -94,17 +135,17 @@
                     </div><hr class="mb-4">
                     <h4 class="mb-3">Payment</h4>
                     <div class="d-block mb-3">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" checked required  class="custom-control-input" >
-                            <label class="custom-control-label">Credit card</label>
+                        <div class="">
+                            <input type="radio" checked  class="" >
+                            <label class="">Credit card</label>
                         </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" required>
-                            <label class="custom-control-label">Debit card </label>
+                        <div class="">
+                            <input type="radio" class="" >
+                            <label class="">Debit card </label>
                         </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input " required>
-                            <label class="custom-control-label">Paypal</label>
+                        <div class="">
+                            <input type="radio" class="" >
+                            <label class="">Paypal</label>
                         </div>
                     </div>
                     <div class="Name-on-card mb-1">
@@ -129,49 +170,10 @@
 
                     
                 </div>
-                <div class="col-4">
-                    <h4 class="text-secondary">Your cart</h4>
-                    <ul class="list-group text-left">
-                        <li class="list-group-item d-flex justify-content-between">
-                           <div>
-                               <h6 class="my-0">Product name</h6>
-                               <label class="text-muted Label-font-size">Brief description</label>
-                           </div>
-                           <span class="text-muted">$12</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            <div>
-                                <h6 class="my-0">Second product</h6>
-                                <label class="Label-font-size text-muted">Brief description</label>
-                            </div>
-                            <span class="text-muted">$8</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            <div>
-                                <h6 class="my-0">Third item</h6>
-                                <label for="" class="Label-font-size text-muted">Brief description</label>
-                            </div>
-                            <span class="text-muted">$5</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between text-success bg-light">
-                            <div >
-                                <h6 class="my-0">Promo code</h6>
-                                <label for="" class="Label-font-size">EXAMPLECODE</label>
-                            </div>
-                            <span >-$5</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            <div>
-                                <h6 class="my-0"></h6>
-                                <label for="" class="Label-font-size">Total (USD)</label>
-                            </div>
-                            <span class="text-dark font-weight-bold">$20</span>
-                        </li>
-                    </ul>
-                </div>
+  
             </div>
             <footer class="mt-5 py-5">
-                <p class="text-muted"> <i class="far fa-copyright  "></i> 2020-2021 H-Techno</p>
+                <p class="text-muted"> &copy; 2020-2021 H-Techno</p>
                 <nav class="nav d-flex justify-content-center">
                     <a href="#" class="nav nav-link">Privacy</a>
                     <a href="#" class="nav nav-link">Terms</a>
