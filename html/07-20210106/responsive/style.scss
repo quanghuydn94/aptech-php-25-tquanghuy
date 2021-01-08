@@ -1,0 +1,61 @@
+.Header{
+    &__Block{
+        &-Red{
+            background-color: red;
+            height: 200px;
+        }
+        &-Blue{
+            background-color:blue;
+            height: 200px;
+        }   
+        &-Yellow{
+            background-color: yellow;
+            height: 200px;
+        }
+    }
+}
+@media only screen and (min-width:576px){
+    .Header{
+        &__Block{
+            &-Red{
+                background-color: blue;
+            }
+            &-Blue{
+                background-color:yellow;
+            }
+            &-Yellow{
+                background-color: red;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .Header{
+        &__Block{
+            &-Red{
+                background-color:yellow;
+            }
+            &-Blue{
+                background-color: blue;
+            }
+            &-Yellow{
+                background-color: red;
+            }
+        }
+    }
+}
+@media only screen and (min-width:1300px){
+    .Header{
+        &__Block{
+            &-Red{
+                background-color:red;
+            }
+            &-Blue{
+                background-color: yellow;
+            }
+            &-Yellow{
+                background-color: blue;
+            }
+        }
+    }
+}

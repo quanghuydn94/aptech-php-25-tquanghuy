@@ -1,0 +1,51 @@
+.Header__Block-Red {
+  background-color: red;
+  height: 200px;
+}
+
+.Header__Block-Blue {
+  background-color: blue;
+  height: 200px;
+}
+
+.Header__Block-Yellow {
+  background-color: yellow;
+  height: 200px;
+}
+
+@media only screen and (min-width: 576px) {
+  .Header__Block-Red {
+    background-color: blue;
+  }
+  .Header__Block-Blue {
+    background-color: yellow;
+  }
+  .Header__Block-Yellow {
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Header__Block-Red {
+    background-color: yellow;
+  }
+  .Header__Block-Blue {
+    background-color: blue;
+  }
+  .Header__Block-Yellow {
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .Header__Block-Red {
+    background-color: red;
+  }
+  .Header__Block-Blue {
+    background-color: yellow;
+  }
+  .Header__Block-Yellow {
+    background-color: blue;
+  }
+} 
+/*# sourceMappingURL=style.css.map */
