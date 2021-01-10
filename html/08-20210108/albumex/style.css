@@ -1,0 +1,29 @@
+.Header {
+  padding: 0px 5%;
+}
+
+.Introduce {
+  padding: 50px 5%;
+}
+
+.Content {
+  padding: 0px 5%;
+}
+
+.Card__Thumbnail--height {
+  height: 200px;
+  background-color: gray;
+}
+
+.View-Edit__BTN-1 {
+  margin-right: -6px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+}
+
+.View-Edit__BTN-2 {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+/*# sourceMappingURL=style.css.map */

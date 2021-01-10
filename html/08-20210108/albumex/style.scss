@@ -1,0 +1,29 @@
+$one-hd-px:5%;
+.Header{
+    padding: 0px $one-hd-px;
+}
+.Introduce{
+    padding: 50px $one-hd-px;
+}
+.Content{
+    padding: 0px $one-hd-px;
+
+}
+.Card{
+    &__Thumbnail--height{
+        height: 200px;
+        background-color: gray;
+    }
+}
+.View-Edit{
+    &__BTN-1{
+        margin-right: -6px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-right: none;
+    }
+    &__BTN-2{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+}
