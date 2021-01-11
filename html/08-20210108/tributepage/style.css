@@ -1,0 +1,15 @@
+.Main {
+  padding-top: 100px;
+  margin: 0px 15px;
+  background-color: #EEEEEE;
+}
+
+.Main__Image {
+  width: 90%;
+  background-color: #FFFFFF;
+}
+
+.Header {
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */
