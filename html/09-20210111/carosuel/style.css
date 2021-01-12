@@ -1,0 +1,48 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+}
+
+.Font__Merri {
+  font-family: 'Merriweather', serif;
+}
+
+.Slide__One {
+  height: 400px;
+  background-image: url("./image/1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.Slide__Two {
+  height: 400px;
+  background-image: url("./image/2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.Slide__Three {
+  height: 400px;
+  background-image: url("./image/3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.Image__Circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-image: url("./image/3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.Image__Content {
+  width: 500px;
+  height: 500px;
+  background-image: url("./image/2.jpg");
+  background-position: right;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+.Font-Libre{
+    font-family: 'Libre Baskerville', serif;
+}
+.Font-Noto{
+    font-family: 'Noto Serif', serif;
+}
+.Nav-color a{
+    color: #6c757d;
+}
+.Title{
+    &__Bg-Image{
+    background-image: url("./image/bg.jpg");
+    background-repeat: none;
+    background-size: cover;
+    }
+}
+.Card{
+    &__One{
+        &__Content{
+
+        }
+        &__Image{
+            background-image: url("./image/thumbnail.jpg");
+            background-size: cover;
+        }
+    }
+}
