@@ -2,17 +2,19 @@
 <html>
     <head>
         <title>Album example</title>
-        <meta name="viewport" content="width=devie-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../bootstrap.css">
         <link rel="stylesheet" href="./style.css">
         <script src="https://kit.fontawesome.com/47b471de20.js" crossorigin="anonymous"></script>
+        <script src="./code.js" defer></script>
+        
     </head>
     <body>
-       <div class="Header bg-dark">
-            <div class="container ">
-                <div class="row ">
-                    <div class=" col-12 col-sm-8  ">
+       <div class="Header bg-dark collapse" id="rowOne">
+            <div class="container " >
+                <div class="row "    >
+                    <div class="  col-md-9">
                         <div class="About">
                             <h4 class="text-white">About</h4>
                             <p class="text-secondary">Add some information about the album below, the author, or any other background context.
@@ -20,7 +22,7 @@
                                 Then, link them off to some social networking sites or contact information.</p>
                         </div>
                     </div>
-                    <div class=" col-12 col-sm-4  ">
+                    <div class="  col-md-3  ">
                         <div class=" Contact text-white">
                             <h3>Contact</h3>
                             <ul class=" list-unstyled ">
@@ -31,18 +33,23 @@
                         </div>          
                     </div>
                 </div>
-                <div class="row pb-2 d-flex "> 
+            </div>
+        </div>
+        <div class="Nav bg-dark">
+            <div class="container "> 
+                <div class="row pb-2 d-flex pt-2 "> 
                     <div class=" col-8 Icon-album ">
                         <h5 class="text-white font-weight-bold"><i class="fas fa-camera"></i> Album</h5>
                     </div>
                     <div class=" col-4">
                         <div class="Menu text-secondary  d-flex justify-content-end">
-                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fas fa-bars  rounded px-3 "></i></button>
+                            <button onclick="openClose();" class="btn btn-sm btn-outline-secondary"><i class="fas fa-bars  rounded px-3 "></i></button>
                         </div>
                     </div>
                 </div>
             </div>
-       </div>
+        </div>
+        
         <div class="Introduce mt-5">
             <div class="container">
                 <div class="row d-flex justify-content-center align-content-center">
