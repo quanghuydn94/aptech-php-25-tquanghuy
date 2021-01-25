@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design spinner loading</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <style>
+        .Spinner{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script src="./script.js"></script>
+</head>
+<body class="text-center pt-5">
+     
+        <p id="demo">place for content</p>
+        <button onclick="loadDoc()">Click</button><br>
+    <div class="Spinner ">
+        <div class="spinner-border text-primary collapse  " id="loading" role="status">
+            <span class="sr-only"></span>
+        </div>
+     </div>
+</body>
+</html>
