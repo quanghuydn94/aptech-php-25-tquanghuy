@@ -1,0 +1,17 @@
+body {
+  padding: 0 5%;
+}
+
+.ImageBGround {
+  height: 400px;
+  background-image: url("./image/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+
+.ImageBGround--Font-family {
+  font-family: 'Courgette', cursive;
+  color: orangered;
+}
+/*# sourceMappingURL=style.css.map */
