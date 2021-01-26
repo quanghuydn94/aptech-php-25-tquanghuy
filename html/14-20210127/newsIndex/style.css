@@ -1,0 +1,51 @@
+.Card_Title--Height-Image1 {
+  height: 100%;
+  background-color: pink;
+  background-image: url("./image/pt1.jpg");
+  background-size: cover;
+  background-position: right;
+  color: white;
+}
+
+.Card_Title--Height-Image2 {
+  height: 100%;
+  background-color: pink;
+  background-image: url("./image/pt2.jpg");
+  background-size: cover;
+  color: #bf8c8c;
+}
+
+.Card_Title--Image {
+  height: 120px;
+  background-color: pink;
+}
+
+.Card_Title--Image-Right {
+  height: 40%;
+  background-color: pink;
+}
+
+@media screen and (min-width: 576px) {
+  .list-group a {
+    font-size: 10px;
+  }
+  p, ul > li, a {
+    font-size: 12px;
+  }
+  h3, h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-group a {
+    font-size: 15px;
+  }
+  p, ul > li, a {
+    font-size: 15px;
+  }
+  h3, h4 {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
