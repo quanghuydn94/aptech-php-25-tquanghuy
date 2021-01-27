@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Show Information</title>
+        <link rel="stylesheet" href="./bootstrap.css">
+        <script src="./script.js"></script>
+    </head>
+    <body class="text-center">
+        <header  >
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-8 d-flex justify-content-between">
+                         <a href="index.html">
+                             <button class="btn-primary btn">Home</button>
+                         </a>
+                         <h1>USER CRUD LAVAREL</h1>
+                    </div>
+                </div>
+            </div>
+         </header>
+        <hr>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr class="text-center">
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Created Date</th>
+                    <th>Updated Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="result"></tbody>
+        </table>
+        <script>
+            function show(index){
+                var user = {
+                    userId: id,
+                    userName: name,
+                    userEmail: email,
+                    userPassword: password,
+                    userCreateAt: create_at,
+                    userUpdateAt: update_at
+                }
+                strUsers.users.push(user);
+                var eachUser= strUsers.users[index];
+                console.log('co');
+                document.getElementById('result').innerhTML =             
+                '<tbody>';              
+                    '<tr>' ;
+                    '<td>' + eachUser.id + '</td>'; 
+                    '<td>' + eachUser.name + '</td>';
+                    '<td>' + eachUser.email + '</td>';
+                    '<td>' + eachUser.password + '</td>';
+                    '<td>' + eachUser.create_at + '</td>';
+                    '<td>' + eachUser.updated_at + '</td>';
+                    '<td>' + '<button onclick="edit()">Edit</button>' 
+                    + '<button onclick="delete()">Delete</button>' + '</td>';
+                     '</tr>';      
+                '</tbody>';
+            }
+        </script>
+    </body>
+
+</html>
