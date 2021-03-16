@@ -1,35 +1,34 @@
 <?php
-// var_dump($_POST);
 
     if($_POST['fname'] !="" && $_POST['pword'] != "" )
     {
-        $file = fopen("file.json", "r+") or die("not found");
+        $file = fopen("file.json", "w") or die("not found");
         echo fread($file,filesize("file.json"));
-        $myfile = json_encode($file);
-        $arrayData = json_decode($myfile);
+        
         $numberAge = (int)$_POST['numberage'];
         date_default_timezone_set("Asia/Ho_Chi_Minh");
         $date = date("Y-m-d H:i:sa");
         $addInfo = array(
-                        "fname" => $_POST['fname'],
-                        "pword" => $_POST['pword'],
-                        "age" => $numberAge,
-                        "time" => $date);
-
-        $arrayData[] = $addInfo;
-        $resultData = json_encode($arrayData);
-        
-        // echo $date;
-        // echo $addInfo[2];
-        // echo $arrayData;
-        // var_dump($resultData );
-        // echo "<br>";
-        // $age = array("Peter"=>35, "Ben"=>37, "Joe"=>43);
-
-        // echo json_encode($age);
-        // echo "<br>";
-        // var_dump($age);
-        fwrite($file,$resultData."\n");
+                        "fname"=>$_POST['fname'],
+                        "pword"=>$_POST['pword'],
+                        "age"=>$numberAge,
+                        "time"=>$date);
+       
+        // $addInfo = '{
+        //         "user":
+        //         [
+        //             {
+        //                 "fullname": $_POST['fname'],
+        //                 "password": $_POST['pword'],
+        //                 "age": $numberAge,
+        //                 "time": $date
+        //             }
+        //         ]
+        // }';
+       
+        $arrayData = array( );
+        array_push($arrayData, $addInfo);
+        fwrite($file,json_encode($arrayData));
         fclose($file);
          
     }else{
