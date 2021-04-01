@@ -1,3 +1,7 @@
+// Homepage CSS
+body{
+    box-sizing: border-box;
+}
 .Header{
     background-color: black;
     &__Image{
@@ -6,7 +10,7 @@
         }
     }
     &__ImageBG--Size{
-        background-image: url(./image/bg.jpg);
+        background-image: url(./imageHomepage/bg.jpg);
         background-size: cover;
         background-repeat: none;
         background-position: center;
@@ -16,7 +20,7 @@
 .Main{
     &__ImageIcon{
         &--Size{
-            background-image: url(./image/imageIcon.jpg);
+            background-image: url(./imageHomepage/imageIcon.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -34,21 +38,21 @@
             border-radius:5% ;
         }
         &--Url1{
-            background-image: url(./image/home1.webp);
+            background-image: url(./imageHomepage/home1.webp);
         }
         &--Url2{
-            background-image: url(./image/home2.webp);
+            background-image: url(./imageHomepage/home2.webp);
         }
         &--Url3{
-            background-image: url(./image/home3.webp);
+            background-image: url(./imageHomepage/home3.webp);
         }
         &--Url4{
-            background-image: url(./image/home4.webp);
+            background-image: url(./imageHomepage/home4.webp);
         }
     }
     &__ImageBG{
         &--Size{
-            background-image: url(./image/imageBG2.webp);
+            background-image: url(./imageHomepage/imageBG2.webp);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -65,16 +69,18 @@
             background-position: center;
         }
         &--Url1{
-            background-image: url(./image/Discover1.webp);
+            background-image: url(./imageHomepage/Discover1.webp);
         }
         &--Url2{
-            background-image: url(./image/Discover2.webp);
+            background-image: url(./imageHomepage/Discover2.webp);
         }
         &--Url3{
-            background-image: url(./image/Discover3.webp);
+            background-image: url(./imageHomepage/Discover3.webp);
         }
 
     }
 
 
 }
+
+ 

@@ -1,0 +1,139 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.Logo--Size {
+  font-size: 40px;
+}
+
+.Header {
+  background: url(./imageHostpage/bg.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.Header__Content {
+  padding: 0 5%;
+}
+
+.Header__Content h1 {
+  font-size: 45px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Header__Content select, .Header input {
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+.Header__Content option {
+  color: black;
+  font-size: 1rem;
+}
+
+.Header__Content--Color {
+  color: #F73967;
+}
+
+.Header__Button--Color {
+  font-size: 18px;
+  height: 60px;
+  width: 180px;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#E61E4F), to(#D80765));
+  background: linear-gradient(90deg, #E61E4F, #D80765);
+  border-radius: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Main {
+  margin: 5% 0;
+  padding: 0 5%;
+}
+
+.Main__H2--Font {
+  font-size: 2.8rem;
+}
+
+.Main__H2--Font span {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+}
+
+.Main__Image--Url1, .Main__Image--Url2, .Main__Image--Url3, .Main__Image--Url4 {
+  background-size: cover;
+  background: no-repeat center;
+  height: 500px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.Main__Image--Url1 {
+  background-image: url(./imageHostpage/Carousel1.jpg);
+}
+
+.Main__Image--Url2 {
+  background-image: url(./imageHostpage/Carousel2.jpg);
+}
+
+.Main__Image--Url3 {
+  background-image: url(./imageHostpage/Carousel3.jpg);
+}
+
+.Main__Image--Url4 {
+  background-image: url(./imageHostpage/Carousel4.jpg);
+}
+
+.Main__Content--Border {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #F7F7F7;
+}
+
+.Main__IconPrev--Size {
+  padding: 4px 6px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0px 1px 1px 1px #E7EAED;
+          box-shadow: 0px 1px 1px 1px #E7EAED;
+  position: absolute;
+  top: 45%;
+  left: -1%;
+}
+
+.Main__IconNext--Size {
+  padding: 4px 6px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0px 1px 2px 1px #E7EAED;
+          box-shadow: 0px 1px 2px 1px #E7EAED;
+  position: absolute;
+  top: 45%;
+  right: -1%;
+}
+
+.Main__IconLi li {
+  background-color: black;
+  padding: 2px 2.5px;
+  border-radius: 50%;
+  width: 2px;
+}
+
+.Main__IconLi {
+  bottom: -10%;
+}
+
+.Image--Background {
+  padding: 0 5%;
+  background: url(./imageHostpage/bg3.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px;
+}
+/*# sourceMappingURL=styleHost.css.map */

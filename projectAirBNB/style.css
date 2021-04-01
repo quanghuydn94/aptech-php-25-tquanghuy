@@ -1,3 +1,8 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .Header {
   background-color: black;
 }
@@ -7,7 +12,7 @@
 }
 
 .Header__ImageBG--Size {
-  background-image: url(./image/bg.jpg);
+  background-image: url(./imageHomepage/bg.jpg);
   background-size: cover;
   background-repeat: none;
   background-position: center;
@@ -15,7 +20,7 @@
 }
 
 .Main__ImageIcon--Size {
-  background-image: url(./image/imageIcon.jpg);
+  background-image: url(./imageHomepage/imageIcon.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,23 +38,23 @@
 }
 
 .Main__ImageLive--Url1 {
-  background-image: url(./image/home1.webp);
+  background-image: url(./imageHomepage/home1.webp);
 }
 
 .Main__ImageLive--Url2 {
-  background-image: url(./image/home2.webp);
+  background-image: url(./imageHomepage/home2.webp);
 }
 
 .Main__ImageLive--Url3 {
-  background-image: url(./image/home3.webp);
+  background-image: url(./imageHomepage/home3.webp);
 }
 
 .Main__ImageLive--Url4 {
-  background-image: url(./image/home4.webp);
+  background-image: url(./imageHomepage/home4.webp);
 }
 
 .Main__ImageBG--Size {
-  background-image: url(./image/imageBG2.webp);
+  background-image: url(./imageHomepage/imageBG2.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -66,14 +71,14 @@
 }
 
 .Main__ImageDiscover--Url1 {
-  background-image: url(./image/Discover1.webp);
+  background-image: url(./imageHomepage/Discover1.webp);
 }
 
 .Main__ImageDiscover--Url2 {
-  background-image: url(./image/Discover2.webp);
+  background-image: url(./imageHomepage/Discover2.webp);
 }
 
 .Main__ImageDiscover--Url3 {
-  background-image: url(./image/Discover3.webp);
+  background-image: url(./imageHomepage/Discover3.webp);
 }
 /*# sourceMappingURL=style.css.map */
