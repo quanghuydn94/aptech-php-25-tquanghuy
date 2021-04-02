@@ -136,4 +136,72 @@ body {
   background-size: cover;
   height: 500px;
 }
+
+.Carousel__Container {
+  width: 100%;
+}
+
+.Carousel__Slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  left: 5%;
+}
+
+.Carousel__Item {
+  width: 400px;
+}
+
+.Carousel__Image--Size {
+  width: 320px;
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.Carousel__Image--Url1 {
+  background: url(./imageHostpage/hostCarousel1.webp) no-repeat center;
+}
+
+.Carousel__Image--Url2 {
+  background: url(./imageHostpage/hostCarousel2.webp) no-repeat center;
+}
+
+.Carousel__Image--Url3 {
+  background: url(./imageHostpage/hostCarousel3.webp) no-repeat center;
+}
+
+.Carousel__Image--Url4 {
+  background: url(./imageHostpage/hostCarousel4.webp) no-repeat center;
+}
+
+.Carousel__Image--Url5 {
+  background: url(./imageHostpage/hostCarousel5.webp) no-repeat center;
+}
+
+.Carousel__Image--Url6 {
+  background: url(./imageHostpage/hostCarousel6.webp) no-repeat center;
+}
+
+.Carousel__Controls {
+  width: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  position: relative;
+  z-index: 2;
+}
+
+#prevBtn, #nextBtn {
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 50%;
+  background-color: #C1C1C1;
+  opacity: 0.7;
+  color: black;
+  -webkit-box-shadow: 0px 1px 1px 1px #C1C1C1;
+          box-shadow: 0px 1px 1px 1px #C1C1C1;
+  top: 100%;
+}
 /*# sourceMappingURL=styleHost.css.map */
