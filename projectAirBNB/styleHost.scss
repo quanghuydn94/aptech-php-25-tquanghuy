@@ -1,38 +1,49 @@
 //Hostpage CSS
 *{
-     
+    padding: 0;
+    margin: 0;
 }
 body{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+     
    
 }
 
 .Logo--Size{
     font-size: 40px;
 }
-
+.Heading_Font{
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+}
 .Header{
     background: url(./imageHostpage/bg.jpg) no-repeat center;
     background-size: cover;
     height: 100vh;
-    &__Content{
-         
-        padding: 0 5% ;
-    }
-    &__Content h1{
+    width: 100vw;
+    &__Content{         
+        padding: 0  5%;
+
+        h1{
         font-size: 45px;
         font-family: 'Poppins', sans-serif;
-    }
-    &__Content select, input {
+        }
+
+        select, input {
         background: transparent;
         color: white;
         border: none;
-    }
-    &__Content option{
+        }
+
+        option{
         color: black;
         font-size: 1rem;
+        }
+        &--Animation{
+            animation: content 2s;
+            animation-timing-function: ease-in-out;
+            position: absolute;
+        }
     }
     &__Content--Color{
         color: #F73967;
@@ -47,6 +58,24 @@ body{
         transition: 1s;
     }
    
+}
+.Button__Position{
+    position: relative;
+    top: 40vh;
+
+    a{
+        text-decoration:underline;
+    }
+}
+@keyframes content{
+    from{
+        padding-top: 40px;
+        opacity: 0.2;
+    }
+    to{
+        padding-top: 0px;
+        opacity: 1;
+    }
 }
 
 //Main content
@@ -65,6 +94,7 @@ body{
             background-size: cover;
             background: no-repeat center;
             height: 500px;
+            width: 50vw;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
         }
@@ -87,6 +117,7 @@ body{
     }
     &__Content{
         &--Border{
+            width: 50vw;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             background-color: #F7F7F7;
@@ -141,21 +172,19 @@ body{
 .Carousel{
     &__Container{
     width: 100%;
-    
+    height: 400px;
     }
 
     &__Slide{
     display: flex;
     width: 100%;
-    height: 400px;
-    // background: yellow;
-    left: 5%;
+    height: 400px;    
     }
     &__Item{
     width: 400px;
     }
     &__Image--Size{
-        width: 320px;
+        width: 322px;
         height: 200px;
         border-radius: 10px;
         background-size: cover;
@@ -179,20 +208,169 @@ body{
         background: url(./imageHostpage/hostCarousel6.webp) no-repeat center;
     }
     &__Controls{
-       width: 100%;
-       transform: translateY(100%);
-       position: relative;
-       z-index: 2;
+      position: relative;
+      top: 25%;
+      left: -1%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      z-index: 1;
     }
 }
-#prevBtn, #nextBtn{
+//button previous
+#prevBtn{
     cursor: pointer;
-    padding: 4px 10px;
-    border-radius: 50%;
-    background-color: #C1C1C1;
     opacity: 0.7;
     color:black;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0px 1px 1px 1px #C1C1C1;
-    top: 100%;
+}
 
+//button next
+#nextBtn{
+    cursor: pointer;
+    opacity: 0.5;
+    color:black;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 1px 1px #C1C1C1;
+}
+#prevBtn:hover, #nextBtn:hover{
+    opacity: 1;
+    background-color: white;
+}
+
+//sign up board above the footer
+.SignUp{
+    padding: 5%;
+
+    &__Content{
+        p {
+            font-size: 18px;
+        }
+    }
+    small {
+        font-size: 0.9rem;
+    }
+    button {
+        background-color: black;
+    }
+    &__Input{
+        input:first-child {
+            border-bottom: none;     
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        input:nth-child(2) {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            top: -5%;
+        }
+    
+        &--Size{
+            display: block;
+            height: 70px;
+            border: 1px solid #969292;
+            border-radius: 10px;
+            outline: none;
+          
+        }
+        
+        input:focus {
+                border-radius: 10px;
+                border: 2px solid black;
+            
+    }
+    }
+}
+
+//Footer items
+.Footer{
+    &__Nav{
+        h6 {
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+        a {
+            color: #545151;
+            text-decoration-color: #a1a1a1;
+            font-size: 14px;
+            font-family:  sans-serif;
+        }
+    }
+    &__Tools{
+        ul > a {
+            color: #545151;
+            margin:0px 10px;
+            list-style-type: none;
+        }
+     
+    }
+    &__Language{
+        a{
+            color: #545151;
+            text-decoration: #545151 underline;
+            margin-right: 20px;
+        }
+    }
+    &__SocialMedia{
+        a {
+            margin-left: 20px;
+            color: #545151;
+            text-decoration: none;
+        }
+    }
+
+}
+//responsive header
+@media screen and (max-width: 768px){
+    .Header{
+        height: 80vh;   
+        &__Content{
+            h1{
+                font-size: 30px;
+            }
+        }
+        &--Animation{
+        }
+    }
+}
+
+//responsive carousel1
+@media screen and (max-width: 768px){
+    .Main{
+        &__Image{
+            &--Url1, &--Url2, &--Url3, &--Url4 {
+                height: 200px;
+                background-size: contain;
+                width: 100%;
+            }
+        }
+        &__Content{
+            height: 230px;
+            h2{
+                text-align: left;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+//responesive footer
+@media screen and (max-width:768px ){
+    .Footer__Nav{
+        padding-top: 10px;
+        border-bottom: 1px solid #545151;
+    }
 }

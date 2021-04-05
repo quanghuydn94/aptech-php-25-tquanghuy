@@ -6,21 +6,23 @@ const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn'); 
 
 //counter
-let counter = 1;
+let counter = 0;
 const size = carouselImages[0].clientWidth;
-console.log(size);
+// console.log(size);
 
 
-carouselSlide.style.transform = 'translateX(' + (-size * counter) +'px)';
+// carouselSlide.style.transform = 'translateX(' + (-size * counter) +'px)';
 
 
 //button listener
 
 nextBtn.addEventListener('click', () => {
-    if (counter >= carouselImages.length -4) return;
+    if (counter > carouselImages.length -5) return;
     carouselSlide.style.transition = 'transform 0.4s ease-in-out';
     counter++;
-    // console.log(counter);
+    console.log(counter);
+    
+    // carouselImages[(counter-1)].style.display = "none";
     carouselSlide.style.transform = 'translateX(' + (-size * counter) +'px)';
 
 });
