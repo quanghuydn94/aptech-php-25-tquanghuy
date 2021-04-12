@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -81,4 +86,24 @@ body {
 .Main__ImageDiscover--Url3 {
   background-image: url(./imageHomepage/Discover3.webp);
 }
-/*# sourceMappingURL=style.css.map */
+
+.Product__Tabs a {
+  color: #555555;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.Product__Tabs a:hover {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.Product__Tabs a::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 4px;
+  width: calc(100%-20px);
+}
+/*# sourceMappingURL=styleMain.css.map */

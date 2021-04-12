@@ -47,8 +47,6 @@ body {
 .Header__Content--Animation {
   -webkit-animation: content 2s;
           animation: content 2s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
   position: absolute;
 }
 
@@ -64,8 +62,6 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#E61E4F), to(#D80765));
   background: linear-gradient(90deg, #E61E4F, #D80765);
   border-radius: 10px;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .Button__Position {
@@ -73,8 +69,61 @@ body {
   top: 40vh;
 }
 
-.Button__Position a {
+.Button__Position #Show {
   text-decoration: underline;
+  background-color: transparent;
+  border: none;
+}
+
+.PopUp {
+  position: absolute;
+  padding: 2%;
+  width: 70%;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #FEFEFE;
+  z-index: 2;
+  opacity: 0.2;
+  display: none;
+  -webkit-animation: popUp 1s;
+          animation: popUp 1s;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  word-break: break-all;
+}
+
+@-webkit-keyframes popUp {
+  from {
+    background-color: whie;
+    opacity: 0.2;
+  }
+  to {
+    background-color: #FEFEFE;
+    opacity: 1;
+  }
+}
+
+@keyframes popUp {
+  from {
+    background-color: whie;
+    opacity: 0.2;
+  }
+  to {
+    background-color: #FEFEFE;
+    opacity: 1;
+  }
+}
+
+.Container__PopUp {
+  display: none;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.2;
+  background-color: #F7F7F7;
+  text-align: center;
 }
 
 @-webkit-keyframes content {
@@ -190,6 +239,7 @@ body {
 .Carousel__Container {
   width: 100%;
   height: 400px;
+  overflow: hidden;
 }
 
 .Carousel__Slide {
@@ -376,16 +426,25 @@ body {
   .Header__Content h1 {
     font-size: 30px;
   }
+  .PopUp {
+    word-break: break-all;
+    width: 100%;
+    z-index: 5;
+  }
+  .PopUp p {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .Main__Image--Url1, .Main__Image--Url2, .Main__Image--Url3, .Main__Image--Url4 {
     height: 200px;
     background-size: contain;
-    width: 100%;
+    width: 100vw;
   }
   .Main__Content {
     height: 230px;
+    width: 100vw;
   }
   .Main__Content h2 {
     text-align: left;

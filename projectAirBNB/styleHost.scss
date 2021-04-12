@@ -12,6 +12,8 @@ body{
 .Logo--Size{
     font-size: 40px;
 }
+
+//header
 .Heading_Font{
     font-size: 45px;
     font-family: 'Poppins', sans-serif;
@@ -41,7 +43,6 @@ body{
         }
         &--Animation{
             animation: content 2s;
-            animation-timing-function: ease-in-out;
             position: absolute;
         }
     }
@@ -55,7 +56,7 @@ body{
         border: none;
         background: linear-gradient(90deg,#E61E4F,#D80765);
         border-radius: 10px;
-        transition: 1s;
+        
     }
    
 }
@@ -63,10 +64,54 @@ body{
     position: relative;
     top: 40vh;
 
-    a{
+    #Show{
         text-decoration:underline;
+        background-color: transparent;
+        border: none;
     }
 }
+// Pop-up - How we estimate your earning potentail
+.PopUp {
+    position: absolute;
+    padding: 2%;
+   
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #FEFEFE;
+    z-index: 2;
+    opacity: 0.2;
+    display: none;
+    animation: popUp 1s;
+    transition: 1s ease-out;
+    word-break: break-all;
+}
+
+@keyframes popUp {
+    from {
+        background-color: whie;
+        opacity: 0.2;
+    }
+
+    to {
+        background-color: #FEFEFE;
+        opacity: 1;
+    }
+}
+
+.Container__PopUp {
+    display: none;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.2;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+
+//animation Header__Content
 @keyframes content{
     from{
         padding-top: 40px;
@@ -124,7 +169,7 @@ body{
         }
     }
 
-    //Button carousel
+    //Button carousel 1
     &__IconPrev{
         &--Size{
             padding:4px 6px;
@@ -173,6 +218,7 @@ body{
     &__Container{
     width: 100%;
     height: 400px;
+    overflow: hidden;
     }
 
     &__Slide{
@@ -342,10 +388,18 @@ body{
                 font-size: 30px;
             }
         }
-        &--Animation{
+      
+    }
+    .PopUp {
+        word-break: break-all;   
+        width: 100%;
+        z-index: 5;
+        p {
+            font-size: 13px;
         }
     }
 }
+ 
 
 //responsive carousel1
 @media screen and (max-width: 768px){
@@ -354,11 +408,12 @@ body{
             &--Url1, &--Url2, &--Url3, &--Url4 {
                 height: 200px;
                 background-size: contain;
-                width: 100%;
+                width: 100vw;
             }
         }
         &__Content{
             height: 230px;
+            width: 100vw;
             h2{
                 text-align: left;
                 font-size: 20px;

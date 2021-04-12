@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air BNB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@588&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styleMain.css">
 <head>
 <body>
-    <header class="Header">
+    <!-- <header class="Header">
         <div class="container mb-5">
             <div class="row py-3">
                 <div class="col-3 ">
@@ -40,10 +43,10 @@
             </div>
         </div>
         <h3 class="text-white text-center py-5">Made possible by Hosts</h3>
-    </header>
+    </header> -->
     <main class="px-5">
         <!-- EXLORE NEARBY -->
-        <div class="container-fluid my-5">
+        <!-- <div class="container-fluid my-5">
             <h2 class="mb-3">Explore nearby</h2>
             <div class="row">
                  
@@ -121,9 +124,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- LIVE ANYWHERE -->
-        <div class="container-fluid mb-5">
+        <!-- <div class="container-fluid mb-5">
             <h2 class="mb-3">Live anywhere</h2>
             <div class="row">
                 <div class="col-3">
@@ -151,21 +154,21 @@
                     <h5>Pets allowed</h5>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Background Become a host -->
-        <div class="container-fluid mb-5">
-            <div class="row">
-                <div class="col-12 Main__ImageBG--Size d-flex align-items-center p-5">
-                    <div class=" text-white w-25">
-                        <h1>Your world is worth sharing</h1>
+        <div class="container-fluid  mb-5">
+            <div class="row ">
+                <div class="col-12  ">
+                    <div class=" text-white Main__ImageBG--Size d-flex flex-column justify-content-center p-5">
+                        <h1 class="w-50">Your world is worth sharing</h1>
                         <p>Turn your extra space into your next opportunity.</p>
-                        <button class="btn-lg bg-white border-white text-muted">Become a Host</button>
+                        <button class="btn-lg bg-white border-white text-muted w-25">Become a Host</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Discover Experiences -->
-        <div class="container-fluid mb-5">
+        <div class="container-fluid mb-5 mx-0">
             <h2>Discover Experiences</h2>
             <p>Unique activities with local experts--in person or online.</p>
             <div class="row">
@@ -189,7 +192,45 @@
                 </div>
             </div>
         </div>
-        <h2>Inspiration for future getaways</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Inspiration for future getaways</h3>
+                    <div class="Product__Tabs">
+                        <ul class="nav nav-tabs  pb-3">
+                            <li class="nav-item active"><a   href="#tab1" data-toggle="tab">Destinations for arts & culture</a></li>
+                            <li class="nav-items"><a   href="#tab2" data-toggle="tab">Destinations for outdoor adventure</a></li>
+                            <li class="nav-items"><a   href="#tab3" data-toggle="tab">Mountain cabins</a></li>
+                            <li class="nav-items"><a   href="#tab4" data-toggle="tab">Beach destinations</a></li>
+                            <li class="nav-items"><a   href="#tab5" data-toggle="tab">Popular destinations</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                                <h1>Phoenix</h1>
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                                <h1>san francisco</h1>
+                            </div>
+                            <div class="tab-pane" id="tab3">
+                                <h1>London</h1>
+                            </div>
+                            <div class="tab-pane" id="tab4">
+                                <h1>Paris</h1>
+                            </div>
+                            <div class="tab-pane" id="tab5">
+                                <h1>York</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <script>
+        $(document).click(function () { 
+            $("nav-tabs > .active").find("li").next("a").css({"border-bottom": "2px solid black"});
+            
+        });
+    </script>
 </body>
 </html>

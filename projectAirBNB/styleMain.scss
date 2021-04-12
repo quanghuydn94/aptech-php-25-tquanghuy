@@ -1,4 +1,8 @@
-// Homepage CSS
+ // Homepage CSS
+ *{
+     margin: 0;
+     padding: 0;
+ }
 body{
     box-sizing: border-box;
 }
@@ -77,10 +81,31 @@ body{
         &--Url3{
             background-image: url(./imageHomepage/Discover3.webp);
         }
-
     }
+}
 
+// table inspiration for future getaways
 
+.Product__Tabs{
+    a{
+        color: #555555;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    a:hover {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        text-decoration: none;
+         
+        // margin-right: 10px;
+    }
+    a::after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 4px;
+        width: calc(100%-20px);
+    }
 }
 
  
