@@ -1,27 +1,39 @@
-<?php
- 
- if (isset($_POST['submit'])) {
-    function insertData() {
-     
-        require_once ("connData.php");
+<?php 
+    function insertData() {   
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $database = "huytran";
+
+        //create connection
+        $conn = new mysqli($servername, $username, $password, $database);
+
+        $conn->set_charset("utf8");
+
+        //check connection
+        if($conn->connect_error) {
+            die("Connection failed:". $connect->connect_error);
+        }
         
+        //insert data into database
         $email = "";
         $firstName = "";
         $lastName = "";
 
+        $firstName = $_POST['fName'];   
+        $lastName = $_POST['lName'];  
+        $email = $_POST['Email'];
          
-            if (isset($_POST['fName'])) { $firstName = $_POST['fName']; }
-            if (isset($_POST['lName'])) { $lastName = $_POST['lName']; }
-            if (isset($_POST['Email'])) { $email = $_POST['Email']; }
-        
-
         //fetch data
         $query = "INSERT INTO userprivate (firstname, lastname, email) 
                 VALUES ( '$firstName','$lastName', '$email')"; 
 
-        $result = mysqli_query($connect,$query);
+        $result = mysqli_query($conn,$query);
         
-        $connect->close();
-       
+         
+         
+        $conn->close();
+        header('Location: answer.html ');
+    
     }
- }
+    

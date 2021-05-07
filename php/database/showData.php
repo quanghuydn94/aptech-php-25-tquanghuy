@@ -6,7 +6,8 @@
 </head>
 
 <body>
-    <table class="table table-hover table-bordered text-center">
+    <h1 class="text-secondary text-center mb-5">INFORMATION USERS</h1>
+    <table class="table table-hover table-bordered text-center w-75 mx-auto">
         <tr class="bg-primary table-hover">
             <th>ID</th>
             <th>FirstName</th>

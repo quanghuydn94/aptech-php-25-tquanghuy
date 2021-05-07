@@ -1,8 +1,18 @@
 <?php 
      
-    require_once ("insertData.php");
-
-    insertData();
+     
+    require_once ("checkUser.php");
+     
+    if (isset($_POST['submit'])) {
+        if (!empty($_POST['fName']) && !empty($_POST['lName']) && !empty($_POST['Email'])) { 
+            $em = $_POST['Email'];           
+            echo checkUser($em);       
+            }
+            else {
+                echo "fill up the field";
+            }       
+    }
+   
 
 ?>
 
@@ -15,7 +25,7 @@
 
 <body>
     <h1 class="text-center text-primary">REGISTER USER</h1>
-    <form class="  w-50 mx-auto" method="post" action="">
+    <form class="  w-50 mx-auto" method="post">
         <div class="form-group">
             <label for="fName">First Name</label>
             <input class="form-control" type="text" name="fName">
