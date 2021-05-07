@@ -1,7 +1,7 @@
 <?php
  
  if (isset($_POST['submit'])) {
-    function login() {
+    function insertData() {
      
         require_once ("connData.php");
         

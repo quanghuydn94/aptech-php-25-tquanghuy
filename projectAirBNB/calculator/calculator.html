@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body >
+    <form method="get" name="formCal">
+        <input type="text" id="a" name="inputa" value="" required>
+        <input type="text" id="b" value="" required>
+        <input type="text" id="cal" value="" required>
+    </form>
+    <div class="screen">
+        <div class="pheptinh  "></div>
+        <div class="result"></div>
+    </div>
+    
+        <div class="size clear" value="0" onclick="clear('0')">AC</div>
+        <div class="size" >X</div>
+        <div class="size"value="%" onclick="setValue('%')">%</div>
+        <div class="size" id="pheptinh" value="/" onclick="setValue('/')">/</div> <br>
+        <div class="size" id="number" value="7" onclick="setValue('7')">7</div>
+        <div class="size" id="number" value="8" onclick="setValue('8' )">8</div>
+        <div class="size" id="number" value="9" onclick="setValue('9' )">9</div>
+        <div class="size" id="pheptinh" value="*" onclick="setValue('*')">*</div><br>
+        <div class="size" id="number" value="4" onclick="setValue('4')">4</div>
+        <div class="size" id="number" value="5" onclick="setValue('5')">5</div>
+        <div class="size" id="number" value="6" onclick="setValue('6')">6</div>
+        <div class="size" id="pheptinh" value="-" onclick="setValue('-')">-</div><br>
+        <div class="size" id="number" value="1" onclick="setValue('1')">1</div>
+        <div class="size" id="number" value="2" onclick="setValue('2')">2</div>
+        <div class="size" id="number" value="3" onclick="setValue('3')">3</div>
+        <div class="size" id="pheptinh" value="+" onclick="setValue('+')">+</div><br>
+        <div class="size">+/-</div>
+        <!-- <div class="size" id="number" value="0" onclick="setValue('0')">0</div> -->
+        <div class="size" id="number" value="." onclick="setValue('.')">.</div>
+        <div class="size bg-dark text-white" id="pheptinh" value="=" onclick="setValue('=')">=</div>
+    
+        <script>
+            function setValue(num) {      
+            
+                document.formCal.inputa.value = document.formCal.inputa.value+num;           
+            }
+            function clear(a) {
+                document.formCal.inputa.value =document.formCal.inputa.value+ a;
+            }
+           
+        </script>
+</body>
+</html>

@@ -74,7 +74,6 @@ body{
 .PopUp {
     position: absolute;
     padding: 2%;
-   
     width: 70%;
     margin: auto;
     border-radius: 10px;
@@ -84,7 +83,6 @@ body{
     display: none;
     animation: popUp 1s;
     transition: 1s ease-out;
-    word-break: break-all;
 }
 
 @keyframes popUp {

@@ -89,7 +89,6 @@ body {
           animation: popUp 1s;
   -webkit-transition: 1s ease-out;
   transition: 1s ease-out;
-  word-break: break-all;
 }
 
 @-webkit-keyframes popUp {

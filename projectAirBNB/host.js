@@ -10,7 +10,7 @@
         clearInterval(id);
 
         function frame() {
-            if (pos == 30) {
+            if (pos == 25) {
                 clearInterval(id);
             } else {
                 container.style.display = "block";
@@ -33,7 +33,8 @@
     container.addEventListener('click', () => {
         container.style.display = "none";
         popUp.style.display = "none";
-    })
+    });
+    
 
 
 // carousel 2 transition image
