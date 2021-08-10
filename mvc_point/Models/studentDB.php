@@ -24,7 +24,7 @@ function updateStudent($id,$studentName,$address,$phone,$MathPoint,$LiteraryPoin
     `MathPoint`='$MathPoint',`LiteraryPoint`='$LiteraryPoint' WHERE StudentId=$id");
     return $update_Count;
 }
-function deleteClass($id){
+function deleteStudent($id){
     global $DB;
     $delete_Count = $DB->exec("DELETE FROM `students` WHERE StudentId=$id");
     return $delete_Count;
