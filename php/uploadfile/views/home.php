@@ -33,7 +33,7 @@
                     <td><?php echo $item['ProductName']; ?></td>
                     <td><?php echo $item['Price']; ?></td>
                     <td> 
-                        <img src="<?php echo $item['ImagePath']; ?>" width="80px;" height="50px;" alt="">
+                        <img src="../<?php echo $item['ImagePath']; ?>" width="80px;" height="50px;" alt="">
                     </td>
                     <td><?php echo $item['Description']; ?></td>
                     <td>
