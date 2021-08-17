@@ -1,4 +1,6 @@
- 
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +10,10 @@
     <title>Document</title>
 </head>
 <body>
-    <label for="">Key account</label>
-    <input type="text" name="key">
-    <button type="submit">check</button>
-    
+    <form action="../index.php?action=active" method="post">
+        <label for="">key</label>
+        <input name="key" type="text">
+        <button type="submit" name="check">Check</button>
+    </form>
 </body>
 </html>

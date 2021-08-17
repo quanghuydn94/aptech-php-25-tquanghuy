@@ -19,6 +19,27 @@ if (!isset($_GET['page'])) {
         header("Location:views/register.php");
     }
 }
+
+//active account
+if(isset($_GET['action']) == 'active') {
+     
+    if(isset($_POST['check'])){
+        include 'Models/verifyDB.php';
+        $vkey = $_POST['key'];
+        echo $vkey;
+        $resultCheck = checkAccount($vkey);
+        $result = $resultCheck->rowCount();
+        if($result >0) {
+            
+            $update = update($vkey);
+            if($update) {
+                echo "your account was activated";
+            } else {
+                echo 'your account activated or invalid';
+            }
+        }
+    }
+}
 if (isset($_POST['u'])) {
     include 'Models/usersDB.php';
     $vkey = md5(time().$_POST['u']);
@@ -34,16 +55,23 @@ if (isset($_POST['u'])) {
         header("Location:views/reply.php"); 
     }
 } 
-// CHECK acount
-if(isset($GET['submit']) ) {
+//CHECK account
+if(isset($_GET['action']) == 'vkey') {
     include 'Models/verifyDB.php';
-    $get_user = verifiedAccount($vkey);
-    if ($_POST['key'] === $get_user['vkey']  ) {
-        update($vkey);
-        echo "activated";
-
+    $key = $_POST['key'];
+    $getKey = verifiedAccount($key);
+    if($getKey >0) {
+        $active = update($get_user);
+        if($active){
+            header("Location:views/reply.php");
+        } else {
+            echo 'cannot do it';
+        }
     }
+     
 }
+ 
+
  
 
  

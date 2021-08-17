@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="../index.php" method="post">
+    <form action="../index.php?action=login" method="post">
         <label for="">Username</label>
         <input type="text" name="user"> <br>
         <label for="">Password</label>
