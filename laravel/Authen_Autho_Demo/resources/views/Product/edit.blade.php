@@ -45,10 +45,11 @@
 
                             <div class="input-group mb-3">
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input"  name="image">
+                                    <input type="file" class="custom-file-input"  name="image" value="{{$product->image}}">
                                     <label class="custom-file-label" for="image">Choose file</label>
                                 </div>
                             </div>
+                            <img src="{{url('images/product')}}/{{$product->image}}" alt="{{url('images/product')}}/{{$product->image}}" width="50px">
                             @error('image')
                             <span class="text-danger"><strong>{{$message}}</strong></span>
                             @enderror

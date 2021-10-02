@@ -158,13 +158,18 @@ class EmployeeController extends Controller
             if ($validate->fails()) {
                 return redirect()->route('employee.edit', $employee->id)->withErrors($validate);
             } else {
-                $employee = User::where('Id', '=', (int) $id);
-                $file = $request->file('avatar');
-                $extension = $file->getClientOriginalExtension();
-                $filename = time() . '.' . $extension;
-                $file->move('images/avatar/', $filename);
+                $employee = User::find($id);
+                if($request->has('avatar')){
 
-                $employee->update([
+                    $file = $request->file('avatar');
+                    $extension = $file->getClientOriginalExtension();
+                    $filename = time() . '.' . $extension;
+                    $file->move('images/avatar/', $filename);
+                } else {
+                    $filename = $employee->avatar;
+                }
+
+                User::where('id','=',(int)$id)->update([
 
                     'name' => $request->input('name'),
                     'email' => $request->input('email'),

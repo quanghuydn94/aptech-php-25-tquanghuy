@@ -3,6 +3,22 @@
 <div class="container">
     <div class="row">
         <div class="col-8">
+            @if (session()->get('success'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <span>{{session()->get('success')}}</span>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            @endif
+            @if (session()->get('updated'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <span>{{session()->get('updated')}}</span>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            @endif
             <div class="btn">
                 <a class="badge badge-primary" href="{{route('employee.create')}}"> New employee</a>
             </div>

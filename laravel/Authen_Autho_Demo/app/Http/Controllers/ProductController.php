@@ -164,7 +164,7 @@ class ProductController extends Controller
                 [
                     'name' => 'max:25',
                     'description' => 'max:255',
-                    'image' => 'required',
+                    // 'image' => 'required|image|mimes:jpg,png,jpeg,svg',
                     'price' => 'numeric',
                 ], [
                     'max' => ':attribute do not more than :max ',
@@ -176,21 +176,26 @@ class ProductController extends Controller
             if ($validate->fails()) {
                 return redirect()->route('product.edit', $product->id)->withErrors($validate);
             } else {
-                $product = Products::where('Id', '=', (int) $id);
 
-                $file = $request->file('image');
-                $extension = $file->getClientOriginalExtension();
-                $filename = time() . '.' . $extension;
-                $file->move('images/product/', $filename);
+                $product = Products::where('id',$id)->first();
+                if (!$request->has('image')) {
+                    // $file = $request->file('image');
+                    // $extension = $file->getClientOriginalExtension();
+                    // $filename = time() . '.' . $extension;
+                    // $file->move('images/product/', $filename);
+                    $filename = $product->image;
+                }
+                // else {
+                // }
+                Products::where('id', '=', (int) $id)->update(
+                    [
 
-                $product->update([
+                        'name' => $request->input('name'),
+                        'description' => $request->input('description'),
+                        'image' => $filename,
+                        'price' => $request->input('price'),
 
-                    'name' => $request->input('name'),
-                    'description' => $request->input('description'),
-                    'image' => $filename,
-                    'price' => $request->input('price'),
-
-                ]);
+                    ]);
                 return redirect()->route('product')->with('updated', 'Your info product updated ');
             }
 
